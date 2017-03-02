@@ -1,0 +1,30 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="default" extends="struts-default">
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		
+		<action name="welcome" class="com.moviemannia.action.WelcomeAction">
+			<result name="SUCCESS" type="tiles">welcome</result>
+		</action>
+     
+     
+      <action name="login" class="com.moviemannia.action.LoginAction">
+			<result name="admin" type="tiles">admin</result>
+			<result name="user" type="tiles">user</result>
+		</action>
+		
+		<action name="manageUser" method="manageUser" class="com.moviemannia.action.UserAction">
+		<result name="SUCCESS" type="tiles">manageUser</result>
+		</action>
+		
+		<action name="addUser" method="add" class="com.moviemannia.action.UserAction">
+		<result name="SUCCESS" type="tiles">login</result>
+		</action>
+     
+	</package>
+</struts>

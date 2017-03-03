@@ -1,10 +1,13 @@
 package com.moviemannia.dao;
 
+import java.util.List;
+
 import com.moviemannia.model.User;
 
 public interface UserDao {
 	
 	
-	public Long add(User user);
+	public String add(User user);
+	 public List<User> findAll();
 
 }

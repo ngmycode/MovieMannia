@@ -1,12 +1,15 @@
 package com.moviemannia.model;
 
-public class User {
+import java.util.List;
 
+public class User {
+	
+    private String id;
 	private String userId;
 	private String password;
 	private String email;
 	private String mobile;
-	
+	private List<User> userList;
 	
 	public String getUserId() {
 		return userId;
@@ -31,6 +34,18 @@ public class User {
 	}
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+	public List<User> getUserList() {
+		return userList;
+	}
+	public void setUserList(List<User> userList) {
+		this.userList = userList;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
 	}
 	
 	

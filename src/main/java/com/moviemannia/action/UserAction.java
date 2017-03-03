@@ -16,6 +16,8 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 	}
 	
 	public String manageUser() throws Exception {
+		UserServiceImpl service  = new UserServiceImpl();
+		service.findAll();
 		return "SUCCESS";
 	}
 

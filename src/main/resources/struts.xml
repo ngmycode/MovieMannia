@@ -23,7 +23,7 @@
 		</action>
 		
 		<action name="addUser" method="add" class="com.moviemannia.action.UserAction">
-		<result name="SUCCESS" type="tiles">login</result>
+		<result name="SUCCESS" type="tiles">manageUser</result>
 		</action>
      
 	</package>

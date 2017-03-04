@@ -12,7 +12,7 @@ public class UserUtils {
 	public static DBObject toDBObject(User user) {
 
 		BasicDBObjectBuilder builder = BasicDBObjectBuilder.start()
-		.append("userID", user.getUserId())
+		.append("userId", user.getUserId())
 		.append("password", user.getPassword())
 		.append("email", user.getEmail())
 		.append("mobile", user.getMobile());

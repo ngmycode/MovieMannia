@@ -26,7 +26,6 @@ public class UserDaoImpl implements UserDao {
 		DB db = mongo.getDB("moviemannia");
 				
 	      DBCollection collection = db.getCollection("user");
-		
 	      DBObject basicDBObject = UserUtils.toDBObject(user);
 	      collection.insert(basicDBObject);
 	      ObjectId id = (ObjectId) basicDBObject.get("_id");
@@ -44,12 +43,10 @@ public class UserDaoImpl implements UserDao {
 	    DBCursor cursor = collection.find();
 	    while (cursor.hasNext()) {
 	    	DBObject dbObject = cursor.next();
-	    	
-	    	System.out.println(cursor.next());
+	    	User user=UserUtils.toUser(dbObject);     	    	
+	    	userList.add(user);
 	    }
-		
-		
-		return null;
+		return userList;
 	}
 
 }

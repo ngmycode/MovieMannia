@@ -1,5 +1,7 @@
 package com.moviemannia.action;
 
+import java.util.List;
+
 import com.moviemannia.model.User;
 import com.moviemannia.service.impl.UserServiceImpl;
 import com.opensymphony.xwork2.ActionSupport;
@@ -12,12 +14,16 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 	public String add() throws Exception {
 		UserServiceImpl service  = new UserServiceImpl();
 		service.add(user);
+	   List<User> users=service.findAll();
+	   user.setUserList(users);
+		
 		return "SUCCESS";
 	}
 	
 	public String manageUser() throws Exception {
 		UserServiceImpl service  = new UserServiceImpl();
-		service.findAll();
+	   List<User> users=service.findAll();
+	   user.setUserList(users);
 		return "SUCCESS";
 	}
 

@@ -3,7 +3,7 @@
 <%-- <a href="<s:url action="friendsLink"/>" >Friends</a><br>
 <a href="<s:url action="officeLink"/>" >The Office</a><br> --%>
 <div id="sidebar">
-<div id="menu">
+<div id="menu"  >
       <ul>
         <li class="first"><a href="#">Manage User</a></li>
         <li><a href="#">Search Movie</a></li>

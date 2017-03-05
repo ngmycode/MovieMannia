@@ -29,7 +29,7 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 
 	public String deleteUser() throws Exception {
 
-		UserServiceImpl service = new UserServiceImpl();
+		UserService service = new UserServiceImpl();
 		service.delete(user.getId());
 		List<User> users = service.findAll();
 		user.setUserList(users);

@@ -26,5 +26,9 @@
 		<result name="SUCCESS" type="tiles">manageUser</result>
 		</action>
      
+        <action name="deleteUser" method="deleteUser" class="com.moviemannia.action.UserAction">
+		<result name="SUCCESS" type="tiles">manageUser</result>
+		</action>
+       
 	</package>
 </struts>

@@ -9,4 +9,5 @@ public interface UserService {
 	
 	public Long add(User user);
     public List<User> findAll();
+    public boolean delete(String objectId);
 }

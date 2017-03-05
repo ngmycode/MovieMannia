@@ -16,8 +16,8 @@ public class UserUtils {
 		.append("password", user.getPassword())
 		.append("email", user.getEmail())
 		.append("mobile", user.getMobile());
-		if (user.getId() != null)
-			builder = builder.append("_id", new ObjectId(user.getId()));
+		/*if (user.getId() != null)
+			builder = builder.append("_id", new ObjectId(user.getId()));*/
 		return builder.get();
 	}
 

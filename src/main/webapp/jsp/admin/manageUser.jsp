@@ -15,6 +15,7 @@
 		}
 	}
 	function editUser(id,userId,emial,mobile) {
+		 document.getElementById("updateDiv").style.display='block';
 		    var form=document.getElementById("userUpdateForm");
 		    form.id.value = id;
 		    form.userId.value = userId;
@@ -22,10 +23,21 @@
 		    form.mobile.value  = mobile;
 	}
 	function addUser() {
+		resetUser();
 	    document.getElementById("addDiv").style.display='block';
-	    
+	    document.getElementById("updateDiv").style.display='none';
 }
-
+  
+	function resetUser(){
+		var form=document.getElementById("userForm");
+	    form.id.value = '';
+	    form.userId.value = '';
+	    form.password.value = '';
+	    form.email.value = '';
+	    form.mobile.value  = '';
+	}
+	
+	
 </script>
 
 <div id="content" style="background-color: #fff; height: 700px">
@@ -73,8 +85,7 @@
 				<td><s:property value="email" /></td>
 				<td><s:property value="mobile" /></td>
 				<td><img src="images/edit.png"
-				 onclick="editUser('<s:property value="id"/>','<s:property value="userId"/>','<s:property value="email"/>'
-				 ,'<s:property value="mobile"/>')" 
+				 onclick="editUser('<s:property value="id"/>','<s:property value="userId"/>','<s:property value="email"/>','<s:property value="mobile"/>')" 
 				 width="25px" height="25px"></td>
 				<td><img src="images/delete.png" width="25px"
 					onclick="deleteUser('<s:property value="id"/>')" height="25px"></td>

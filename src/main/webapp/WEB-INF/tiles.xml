@@ -15,7 +15,7 @@
   </definition>
   
    <definition name="admin" template="/baseLayout.jsp">
-      <put-attribute name="title"  value="Template"/>
+      <put-attribute name="title"  value="Admin Panel"/>
       <put-attribute name="header" value="/header.jsp"/>
       <put-attribute name="menu"   value="/jsp/admin/adminMenu.jsp"/>
       <put-attribute name="body"   value="/body.jsp"/>

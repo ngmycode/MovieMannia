@@ -98,7 +98,7 @@ a:hover {
 
 #logo {
 	height: 220px;
-	background: #dc2a2a ;
+	background: #fbbebe ;
 }
 
 #logo h1, #logo h2 {
@@ -199,9 +199,10 @@ a:hover {
 /* Content */
 
 #content {
-	float: right;
-	width: 740px;
-		background: #FFFFFF url(images/img02.gif) repeat-y right top;
+	padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Footer */

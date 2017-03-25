@@ -19,16 +19,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.jsp">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="welcome.jsp#searchbox">Search Movie</a>
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
                     </li>
                     <li>
-                        <a href="blog.html">Offers</a>
+                         <a href="<s:url action="showOffer"/>">Offers</a>
                     </li>
                      <li>
                        
@@ -90,22 +90,22 @@
                                 </s:form>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="Registration">
+                           <!--  <div  id="addDiv" align="center" style="margin-top:10%;display: none">-->
+		             <div class="tab-pane" id="Registration">
+                            <div id="addDiv">
+                            <s:form id="userForm" action="addUser">
+                            <s:hidden key="id" id="id" value="" />
                                 <form role="form" class="form-horizontal">
-                                <div class="form-group">
+                               
+                                <s:textfield name="userId" label="UserId"></s:textfield>
+		
+                                 <div class="form-group">
                                     <label for="email" class="col-sm-2 control-label">
-                                        Name</label>
-                                    <div class="col-sm-10">
-                                        <div class="row">
-                                           <!--  <div class="col-md-3">
-                                                <select class="form-control">
-                                                    <option>Mr.</option>
-                                                    <option>Ms.</option>
-                                                    <option>Mrs.</option>
-                                                </select>
-                                            </div-->
+                                        UserId</label>
+                                    
+                                           
                                             <div class="col-md-9">
-                                                <input type="text" class="form-control" placeholder="Name" />
+                                              <input type="name" name="userId" class="form-control" id="name" placeholder="User Id" />
                                             </div>
                                         </div>
                                     </div>
@@ -114,14 +114,14 @@
                                     <label for="email" class="col-sm-2 control-label">
                                         Email</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email" placeholder="Email" />
+                                       <input type="email" name="email" class="form-control" id="email" placeholder="Email" />
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="mobile" class="col-sm-2 control-label">
                                         Mobile</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+                                       <input type="mobile" name="mobile" class="form-control" id="mobile" placeholder="Mobile" />
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -135,6 +135,7 @@
                                     <div class="col-sm-2">
                                     </div>
                                     <div class="col-sm-10">
+                                    <s:submit value="Submit"></s:submit>
                                         <button type="button" class="btn btn-primary btn-sm">
                                             Save & Continue</button>
                                         <button type="button" class="btn btn-default btn-sm">
@@ -142,7 +143,8 @@
                                     </div>
                                 </div>
                                 </form>
-                               
+                              </s:form> 
+                            </div>
                             </div>
                         </div>
                        
@@ -186,4 +188,19 @@ function validate(){
 	document.getElementById('loginForm').submit();
 	
 }
+function addUser() {
+	resetUser();
+    document.getElementById("addDiv").style.display='block';
+    document.getElementById("updateDiv").style.display='none';
+}
+function resetUser(){
+	var form=document.getElementById("userForm");
+    form.id.value = '';
+    form.userId.value = '';
+    form.password.value = '';
+    form.email.value = '';
+    form.mobile.value  = '';
+}
+
+
     </script>

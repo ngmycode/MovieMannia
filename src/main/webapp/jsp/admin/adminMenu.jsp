@@ -23,7 +23,7 @@
 </head>
 <div class="brand">Movie Mannia</div>
     <div class="address-bar"> <br>Book Movie  Anytime ! Anywhere ! </br></div>
- <
+ 
 <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->

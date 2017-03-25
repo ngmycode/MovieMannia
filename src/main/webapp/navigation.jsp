@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.jsp">Home</a>
+                        <a href="welcome.jsp">Home</a>
                     </li>
                     <li>
                         <a href="welcome.jsp#searchbox">Search Movie</a>

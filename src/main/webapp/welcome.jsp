@@ -88,8 +88,8 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">website
-                        <strong>worth visiting</strong>
+                    <h2 class="intro-text text-center">Search
+                        <strong>Movie</strong>
                     </h2>
                     <div>
                         <jsp:include page="SearchMovie.jsp" />  
@@ -111,7 +111,7 @@
                     </h2>
                     <hr>
                     <p></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <p>Lorem ipsum dolor</p>
                 </div>
             </div>
         </div>

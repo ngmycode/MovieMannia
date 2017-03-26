@@ -75,9 +75,10 @@
                     </li>
                 </ul>
             </div>
-           </nav>
+           
             <!-- /.navbar-collapse -->
         </div>
+        </nav>
         <footer>
         <div class="container">
             <div class="row">

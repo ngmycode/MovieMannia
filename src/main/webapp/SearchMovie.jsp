@@ -40,8 +40,12 @@
                                         
                                         <option value="3">Adlabs</option>
                                     </select>
+                                     </div>
+                                     <div class="form-group">
+                                     <label for="contain">No. of Tickets</label>
+                                    <input type="text" class="form-control" placeholder="Enter number" />
                                     
-                                  </div>
+                                    </div>
                                   <div class="form-group">
                                     <label for="contain">Show time</label>
                                     <select class="form-control">

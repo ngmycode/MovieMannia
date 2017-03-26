@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="welcome.jsp">Home</a>
+                        <a href="welcome.jsp.jsp">Home</a>
                     </li>
                     <li>
                         <a href="welcome.jsp#searchbox">Search Movie</a>
@@ -34,6 +34,15 @@
                        
    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
     Login/Register</button>
+          
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        
+        <!-- /.container -->
+    </nav>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -169,15 +178,7 @@
     </div>
 </div>
     
-                       
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        
-        <!-- /.container -->
-    </nav>
+                 
 <script>
 $('#myModal').modal('show');
 

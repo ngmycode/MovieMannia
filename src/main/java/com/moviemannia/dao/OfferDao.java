@@ -12,7 +12,7 @@ public interface OfferDao {
 
 	public boolean delete(DBObject offer);
 
-	public DBObject findDocumentById(String offer_id);
+	public DBObject findDocumentById(String _id);
 
 
 }

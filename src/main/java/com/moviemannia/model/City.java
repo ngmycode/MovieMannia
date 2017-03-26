@@ -18,18 +18,13 @@ public class City {
 	public void setCityId(String city_id) {
 		this.city_id = city_id;
 	}
-	public String getCityDesc() {
-		return city_desc ;
+	public String getCityName() {
+		return city_name ;
 	}
-	public void setCityDesc(String city_desc) {
-		this.city_desc = city_desc;
+	public void setCityName(String city_name) {
+		this.city_desc = city_name;
 	}
-	public String getCityDateCreated() {
-		return date_created;
-	}
-	public void setCityDateCreated(String date_created) {
-		this.date_created = date_created;
-	}
+	
 	
 	public List<City> getCityList() {
 		return cityList;
@@ -37,12 +32,12 @@ public class City {
 	public void setCityList(List<City> cityList) {
 		this.cityList = cityList;
 	}
-	//public String getId() {
-		//return id;
-	//}
-	//public void setId(String id) {
-		//this.id = id;
-	//}
+	public String getId() {
+		return id;
+	}
+public void setId(String id) {
+		this.id = id;
+	}
 	
 	
 	

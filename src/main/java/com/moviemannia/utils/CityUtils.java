@@ -13,8 +13,8 @@ public class CityUtils {
 
 		BasicDBObjectBuilder builder = BasicDBObjectBuilder.start()
 		.append("city_id", city.getCityId())
-		.append("city_desc", city.getCityDesc())
-		.append("date_created", city.getCityDateCreated());
+		.append("city_name", city.getCityName());
+	
 		
 		/*if (user.getId() != null)
 			builder = builder.append("_id", new ObjectId(user.getId()));*/
@@ -26,10 +26,10 @@ public class CityUtils {
 	public static City toCity(DBObject doc) {
 		City city = new City();
 		city.setCityId((String) doc.get("city_id"));
-		city.setCityDesc((String) doc.get("city_desc"));
-		city.setCityDateCreated((String) doc.get("date_created"));
-		//ObjectId id = (ObjectId) doc.get("_id");
-		//city.setId(id.toString());
+		city.setCityName((String) doc.get("city_name"));
+
+		ObjectId id = (ObjectId) doc.get("_id");
+		city.setId(id.toString());
 		return city;
 
 	}

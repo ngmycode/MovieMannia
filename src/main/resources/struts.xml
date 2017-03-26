@@ -22,6 +22,8 @@
 		<result name="SUCCESS" type="tiles">manageUser</result>
 		</action>
 		
+		
+		
 		<action name="addUser" method="add" class="com.moviemannia.action.UserAction">
 		<result name="SUCCESS" type="tiles">manageUser</result>
 		</action>
@@ -29,6 +31,13 @@
         <action name="deleteUser" method="deleteUser" class="com.moviemannia.action.UserAction">
 		<result name="SUCCESS" type="tiles">manageUser</result>
 		</action>
-       
+		<action name="showOffer" method="showOffer" class="com.moviemannia.action.ShowOfferAction">
+		<result name="SUCCESS" type="tiles">showOffer</result>
+		</action>
+		
+		
+		
+		
+		
 	</package>
 </struts>

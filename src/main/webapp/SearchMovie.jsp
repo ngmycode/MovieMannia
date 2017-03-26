@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-md-12">
             <div class="input-group" id="adv-search">
-                <input type="text" class="form-control" placeholder="Search for snippets" />
+                <input type="text" class="form-control" placeholder="Search for Movies" />
                 <div class="input-group-btn">
                     <div class="btn-group" role="group">
                         <div class="dropdown dropdown-lg">
@@ -12,20 +12,50 @@
                                   <div class="form-group">
                                     <label for="filter">Filter by</label>
                                     <select class="form-control">
-                                        <option value="0" selected>All Snippets</option>
-                                        <option value="1">Featured</option>
-                                        <option value="2">Most popular</option>
+                                        <option value="0" selected>All Movies</option>
+                                        <option value="1">BollyWood</option>
+                                        <option value="2">HollyWood</option>
                                         <option value="3">Top rated</option>
-                                        <option value="4">Most commented</option>
+                                        <option value="4">Most Recent</option>
                                     </select>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="contain">City</label>
+                                    <select class="form-control">
+                                        <option value="0" selected>Select City</option>
+                                        <option value="1">Bhopal</option>
+                                        <option value="2">Indore</option>
+                                        
+                                        <option value="3">Mumbai</option>
+                                    </select>
+                                    
                                   </div>
+                                  
                                   <div class="form-group">
-                                    <label for="contain">Author</label>
-                                    <input class="form-control" type="text" />
-                                  </div>
+                                    <label for="contain">theater</label>
+                                    <select class="form-control">
+                                        <option value="0" selected>Select theater</option>
+                                        <option value="1">PVR</option>
+                                        <option value="2">INOX</option>
+                                        
+                                        <option value="3">Adlabs</option>
+                                    </select>
+                                     </div>
+                                     <div class="form-group">
+                                     <label for="contain">No. of Tickets</label>
+                                    <input type="text" class="form-control" placeholder="Enter number" />
+                                    
+                                    </div>
                                   <div class="form-group">
-                                    <label for="contain">Contains the words</label>
-                                    <input class="form-control" type="text" />
+                                    <label for="contain">Show time</label>
+                                    <select class="form-control">
+                                        <option value="0" selected>Select showtime</option>
+                                        <option value="1">10am</option>
+                                        <option value="2">12pm</option>
+                                        
+                                        <option value="3">3pm</option>
+                                        <option value="4">9pm</option>
+                                    </select>
                                   </div>
                                   <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                                 </form>

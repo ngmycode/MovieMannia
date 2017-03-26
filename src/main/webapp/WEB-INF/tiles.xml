@@ -29,7 +29,8 @@
 
   <definition name="login" extends="baseLayout">
   <put-attribute name="menu"   value="/loginMenu.jsp"/>
-  <put-attribute name="body"   value="/welcomeIndex.jsp"/>      
+  <put-attribute name="body"   value="
+"/>      
   </definition>  
 
   <definition name="user" extends="baseLayout">
@@ -39,6 +40,9 @@
   
    <definition name="manageUser" extends="admin">
     <put-attribute name="body"   value="/jsp/admin/manageUser.jsp"/>      
+  </definition>
+  <definition name="showOffer" extends="baseLayout">
+    <put-attribute name="body"   value="/showOffer.jsp"/>      
   </definition>
   
 </tiles-definitions>

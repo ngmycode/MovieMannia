@@ -53,11 +53,11 @@
                         
   
   <ul class="dropdown-menu">
-    <li><a href="#">User</a></li>
+    <li><a href="<s:url action="manageUser"/>">User</a></li>
     <li><a href="#">Movies</a></li>
     <li><a href="#">Cities</a></li>
      <li><a href="#">Theater</a></li>
-                          <li><a href="#">Offer</a></li>
+    <li><a href="#">Offer</a></li>
   </ul>
 </div>
                         

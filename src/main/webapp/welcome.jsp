@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- <head>
+<head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,19 +11,18 @@
 
     <title>Movie Mannia</title>
 
-    <!-- Bootstrap Core CSS 
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS 
+    <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
 
-    <!-- Fonts 
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
     
 </head>
--->
 
 <body>
 
@@ -76,7 +75,7 @@
                     <hr class="tagline-divider">
                     <h2>
                         <small>Entertainment
-                            <strong>Experience like never before</strong>
+                            <strong></strong>
                         </small>
                     </h2>
                 </div>
@@ -118,7 +117,7 @@
     </div>
     <!-- /.container -->
 
-   <!-- <footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -126,7 +125,7 @@
                 </div>
             </div>
         </div>
-    </footer>  -->
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

@@ -29,4 +29,10 @@ public class TheaterServiceImpl implements TheaterService {
 		DBObject theater = dao.findDocumentById(objectId);
 		return dao.delete(theater);	}
 
+	@Override
+	public List<Theater> searchTheater(String cityCode) {
+		TheaterDao dao = new TheaterDaoImpl();
+		return dao.searchTheater(cityCode);
+	}
+
 }

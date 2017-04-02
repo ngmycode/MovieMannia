@@ -16,11 +16,9 @@ public class TheaterUtils {
 				.append("th_mail", theater.getTheaterEmail())
 				.append("th_phone", theater.getTheaterPhone())
 				;
-
-		/*
-		 * if (user.getId() != null) builder = builder.append("_id", new
-		 * ObjectId(user.getId()));
-		 */
+    
+		BasicDBObjectBuilder citybuilder = BasicDBObjectBuilder.start().append("city_id",theater.getCity());
+		builder.append("city", citybuilder.get());
 		return builder.get();
 	}
 

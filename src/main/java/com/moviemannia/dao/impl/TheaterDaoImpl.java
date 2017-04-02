@@ -70,4 +70,27 @@ public class TheaterDaoImpl implements TheaterDao {
 	    return dbObj;
 	}
 
+	@Override
+	public List<Theater> searchTheater(String cityCode) {
+		List<Theater> theaterList = new ArrayList<Theater>();
+		MongoClient mongo = new MongoClient("localhost", 27017);
+		DB db = mongo.getDB("moviemannia");
+	    DBCollection collection = db.getCollection("theater");
+	    
+	    BasicDBObject whereQuery = new BasicDBObject();
+	    whereQuery.put("city.city_id", cityCode);
+	    
+	    DBCursor cursor = collection.find(whereQuery);
+	    while (cursor.hasNext()) {
+	    	DBObject dbObject = cursor.next();
+	    	Theater theater=TheaterUtils.toTheater(dbObject);     	    	
+	    	theaterList.add(theater);
+	    }
+	    mongo.close();
+		return theaterList;
+		
+	}
+	
+	
+
 }

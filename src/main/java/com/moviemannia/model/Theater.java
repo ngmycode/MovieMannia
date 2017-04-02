@@ -11,7 +11,8 @@ public class Theater {
 	private String theaterEmail;
 	private String theaterPhone;
 	private List<Theater> theaterList;
-	
+	private List<City> cityList;
+	private String city;
 	
 	public String getId() {
 		return id;
@@ -54,6 +55,18 @@ public class Theater {
 	}
 	public void setTheaterList(List<Theater> theaterList) {
 		this.theaterList = theaterList;
+	}
+	public List<City> getCityList() {
+		return cityList;
+	}
+	public void setCityList(List<City> cityList) {
+		this.cityList = cityList;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
 	}
 	
 

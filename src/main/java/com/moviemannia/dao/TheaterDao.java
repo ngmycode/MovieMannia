@@ -14,5 +14,8 @@ public interface TheaterDao {
 	public boolean delete(DBObject theater);
 
 	public DBObject findDocumentById(String id);
+	
+	public List<Theater> searchTheater(String cityCode);
+	
 
 }

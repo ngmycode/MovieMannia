@@ -9,4 +9,5 @@ public interface TheaterService {
 	public Long add(Theater theater);
     public List<Theater> findAll();
     public boolean delete(String objectId);
+    public List<Theater> searchTheater(String cityCode); 
 }

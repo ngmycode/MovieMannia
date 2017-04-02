@@ -43,11 +43,26 @@
 		<result name="SUCCESS" type="tiles">manageCity</result>
 		</action>
      
-        <action name="deleteUser" method="deleteUser" class="com.moviemannia.action.CityAction">
+        <action name="deleteCity" method="deleteCity" class="com.moviemannia.action.CityAction">
 		<result name="SUCCESS" type="tiles">manageCity</result>
 		</action>
 	
+	   <!-- Theater curd start -->
+		<action name="manageTheater" method="manageTheater" class="com.moviemannia.action.TheaterAction">
+		<result name="SUCCESS" type="tiles">manageTheater</result>
+		</action>
 		
+		<action name="addTheater" method="addTheater" class="com.moviemannia.action.TheaterAction">
+		<result name="SUCCESS" type="tiles">manageTheater</result>
+		</action>
+     
+        <action name="deleteTheater" method="deleteTheater" class="com.moviemannia.action.TheaterAction">
+		<result name="SUCCESS" type="tiles">manageTheater</result>
+		</action>
+		
+		<action name="searchTheater" method="searchTheater" class="com.moviemannia.action.TheaterAction">
+		<result name="SUCCESS" type="tiles">manageTheater</result>
+		</action>
 		
 	</package>
 </struts>

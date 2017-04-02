@@ -81,7 +81,7 @@
                                     <label for="inputtext2" class="col-sm-2 control-label">
                                         Password</label>
                                     <div class="col-sm-10">
-                                    <input id="pass" type="password" name="pass" class="form-control" placeholder="Email"/>
+                                    <input id="pass" type="password" name="pass" class="form-control" placeholder="Password"/>
                                                                           </div>
                                 </div>
                                 <div class="row">

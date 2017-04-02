@@ -1,3 +1,5 @@
+<s:form action="search" id="searchForm" onsubmit="validate()">
+     
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -57,7 +59,8 @@
                                         <option value="4">9pm</option>
                                     </select>
                                   </div>
-                                  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                 
+                                  <button type="submit" id="searchsubmit" class="btn btn-primary" name="searchsubmit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                                 </form>
                             </div>
                         </div>
@@ -68,7 +71,7 @@
           </div>
         </div>
 	</div>
-</div>
+	</s:form>
 <style>
 body {
     padding-top: 50px;

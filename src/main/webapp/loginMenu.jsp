@@ -16,6 +16,7 @@
       </form>
     </div> 
  -->
+ <!--  
     <div id="login" style="height: 475px">
       <h2 class="title1">Login</h2>
       <form id="form1" method="post" action="#">
@@ -30,6 +31,7 @@
         </fieldset>
       </form>
     </div>
+    
      <div id="login">
       <!-- <h2 class="title1">Search Movie</h2>
       <form id="form1" method="post" action="#">

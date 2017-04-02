@@ -1,4 +1,9 @@
-
-<div id="footer">
-  <p id="links"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
- </div>
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Your Website 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>

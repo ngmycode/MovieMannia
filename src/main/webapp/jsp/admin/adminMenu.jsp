@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><meta name="author" content="">
  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -28,6 +28,9 @@
 
     
 </head>
+<body>  <div class="brand">Movie Mannia</div>
+    <div class="address-bar"> <br>Book Movie  Anytime ! Anywhere ! </br></div>
+
 <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -47,10 +50,11 @@
                     <li>
                         <a href="welcome.jsp">Home</a>
                     </li>
-                    <li style>
+                    <li> <br></br>
                     <div class="dropdown" style="position:relative">
+                   
                         <a href="#" data-toggle="dropdown">Manage Utilities  <span class="caret"></span></a>
-                        
+                      
   
   <ul class="dropdown-menu">
     <li><a href="<s:url action="manageUser"/>">User</a></li>
@@ -75,17 +79,9 @@
                     </li>
                 </ul>
             </div>
-           </nav>
+           </div>
             <!-- /.navbar-collapse -->
-        </div>
-        <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-                     
-      
+       </nav>
+         <div class="container"></div>
+         </body>
+        

@@ -34,9 +34,19 @@
 		<action name="showOffer" method="showOffer" class="com.moviemannia.action.ShowOfferAction">
 		<result name="SUCCESS" type="tiles">showOffer</result>
 		</action>
+		<!-- city curd start -->
+		<action name="manageCity" method="manageCity" class="com.moviemannia.action.CityAction">
+		<result name="SUCCESS" type="tiles">manageCity</result>
+		</action>
 		
-		
-		
+		<action name="addCity" method="addCity" class="com.moviemannia.action.CityAction">
+		<result name="SUCCESS" type="tiles">manageCity</result>
+		</action>
+     
+        <action name="deleteUser" method="deleteUser" class="com.moviemannia.action.CityAction">
+		<result name="SUCCESS" type="tiles">manageCity</result>
+		</action>
+	
 		
 		
 	</package>

@@ -45,4 +45,8 @@
     <put-attribute name="body"   value="/showOffer.jsp"/>      
   </definition>
   
+    <definition name="manageCity" extends="admin">
+    <put-attribute name="body"   value="/jsp/admin/manageCity.jsp"/>      
+  </definition>
+  
 </tiles-definitions>

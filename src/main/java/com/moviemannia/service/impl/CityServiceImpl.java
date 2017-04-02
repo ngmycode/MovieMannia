@@ -6,11 +6,8 @@ import java.util.List;
 import com.mongodb.DBObject;
 import com.moviemannia.dao.CityDao;
 import com.moviemannia.dao.impl.CityDaoImpl;
-
 import com.moviemannia.model.City;
-
 import com.moviemannia.service.CityService;
-import com.moviemannia.service.UserService;
 
 public class CityServiceImpl implements CityService {
 public Long add(City city) {

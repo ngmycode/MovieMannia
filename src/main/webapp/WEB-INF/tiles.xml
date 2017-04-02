@@ -38,9 +38,7 @@
       <put-attribute name="body"   value="/welcome.jsp"/>      
   </definition>
   
-   <definition name="manageUser" extends="admin">
-    <put-attribute name="body"   value="/jsp/admin/manageUser.jsp"/>      
-  </definition>
+  
   <definition name="showOffer" extends="baseLayout">
     <put-attribute name="body"   value="/showOffer.jsp"/>      
   </definition>
@@ -51,6 +49,10 @@
   
   <definition name="manageTheater" extends="admin">
     <put-attribute name="body"   value="/jsp/admin/manageTheater.jsp"/>      
+  </definition>
+ 
+  <definition name="manageScreen" extends="admin">
+    <put-attribute name="body"   value="/jsp/admin/manageScreen.jsp"/>      
   </definition>
   
 </tiles-definitions>

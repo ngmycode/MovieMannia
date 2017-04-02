@@ -61,6 +61,7 @@
     <li><a href="#">Movies</a></li>
     <li><a href="<s:url action="manageCity"/>">Cities</a></li>
      <li><a href="<s:url action="manageTheater"/>">Theater</a></li>
+      <li><a href="<s:url action="manageScreen"/>">Screen</a></li>
     <li><a href="#">Offer</a></li>
   </ul>
 </div>

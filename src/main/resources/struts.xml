@@ -34,7 +34,7 @@
 		<action name="showOffer" method="showOffer" class="com.moviemannia.action.ShowOfferAction">
 		<result name="SUCCESS" type="tiles">showOffer</result>
 		</action>
-		<!-- city curd start -->
+		<!-- city crud start -->
 		<action name="manageCity" method="manageCity" class="com.moviemannia.action.CityAction">
 		<result name="SUCCESS" type="tiles">manageCity</result>
 		</action>
@@ -47,7 +47,7 @@
 		<result name="SUCCESS" type="tiles">manageCity</result>
 		</action>
 	
-	   <!-- Theater curd start -->
+	   <!-- Theater crud start -->
 		<action name="manageTheater" method="manageTheater" class="com.moviemannia.action.TheaterAction">
 		<result name="SUCCESS" type="tiles">manageTheater</result>
 		</action>
@@ -62,6 +62,22 @@
 		
 		<action name="searchTheater" method="searchTheater" class="com.moviemannia.action.TheaterAction">
 		<result name="SUCCESS" type="tiles">manageTheater</result>
+		</action>
+		<!-- Screen crud start -->
+		<action name="manageScreen" method="manageScreen" class="com.moviemannia.action.ScreenAction">
+		<result name="SUCCESS" type="tiles">manageScreen</result>
+		</action>
+		
+		<action name="addScreen" method="addScreen" class="com.moviemannia.action.ScreenAction">
+		<result name="SUCCESS" type="tiles">manageScreen</result>
+		</action>
+     
+        <action name="deleteScreen" method="deleteScreen" class="com.moviemannia.action.ScreenAction">
+		<result name="SUCCESS" type="tiles">manageScreen</result>
+		</action>
+		
+		<action name="searchScreen" method="searchScreen" class="com.moviemannia.action.ScreenAction">
+		<result name="SUCCESS" type="tiles">manageScreen</result>
 		</action>
 		
 	</package>

@@ -2,17 +2,19 @@ package com.moviemannia.model;
 
 import java.util.List;
 
-public class movie {
+public class Movie {
 	
 	private String id;
-	private String movieCode;
+	private String movieId;
 	private String movieName;
-	private String movieAddress;
-	private String movieEmail;
-	private String moviePhone;
-	private List<movie> movieList;
-	private List<City> cityList;
-	private String city;
+	private String language;
+	private String certificate;
+	private String releaseDate;
+	private String length;
+	private String actor;
+	private List<Movie> movieList;
+	private List<Screen> screenList;
+	private String screen;
 	
 	public String getId() {
 		return id;
@@ -20,53 +22,65 @@ public class movie {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getmovieCode() {
-		return movieCode;
+	public String getMovieId() {
+		return movieId;
 	}
-	public void setmovieCode(String movieCode) {
-		this.movieCode = movieCode;
+	public void setMovieId(String movieId) {
+		this.movieId = movieId;
 	}
-	public String getmovieName() {
+	public String getMovieName() {
 		return movieName;
 	}
-	public void setmovieName(String movieName) {
+	public void setMovieName(String movieName) {
 		this.movieName = movieName;
 	}
-	public String getmovieAddress() {
-		return movieAddress;
+	public String getLanguage() {
+		return language;
 	}
-	public void setmovieAddress(String movieAddress) {
-		this.movieAddress = movieAddress;
+	public void setLanguage(String language) {
+		this.language = language;
 	}
-	public String getmovieEmail() {
-		return movieEmail;
+	public String getCertificate() {
+		return certificate;
 	}
-	public void setmovieEmail(String movieEmail) {
-		this.movieEmail = movieEmail;
+	public void setCertificate(String certificate) {
+		this.certificate = certificate;
 	}
-	public String getmoviePhone() {
-		return moviePhone;
+	public String getReleaseDate() {
+		return releaseDate;
 	}
-	public void setmoviePhone(String moviePhone) {
-		this.moviePhone = moviePhone;
+	public void setReleaseDate(String releaseDate) {
+		this.releaseDate = releaseDate;
 	}
-	public List<movie> getmovieList() {
+	public String getLength() {
+		return length;
+	}
+	public void setLength(String length) {
+		this.length = length;
+	}
+	public String getActor() {
+		return actor;
+	}
+	public void setActor(String actor) {
+		this.actor = actor;
+	}
+	public List<Movie> getMovieList() {
 		return movieList;
 	}
-	public void setmovieList(List<movie> movieList) {
+	public void setMovieList(List<Movie> movieList) {
 		this.movieList = movieList;
 	}
-	public List<City> getCityList() {
-		return cityList;
+	public List<Screen> getScreenList() {
+		return screenList;
 	}
-	public void setCityList(List<City> cityList) {
-		this.cityList = cityList;
+	public void setScreenList(List<Screen> screenList) {
+		this.screenList = screenList;
 	}
-	public String getCity() {
-		return city;
+	public String getScreen() {
+		return screen;
 	}
-	public void setCity(String city) {
-		this.city = city;
+	public void setScreen(String screen) {
+		this.screen = screen;
 	}
 	
 

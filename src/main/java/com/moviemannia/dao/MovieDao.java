@@ -3,19 +3,19 @@ package com.moviemannia.dao;
 import java.util.List;
 
 import com.mongodb.DBObject;
-import com.moviemannia.model.movie;
+import com.moviemannia.model.Movie;
 
-public interface movieDao {
+public interface MovieDao {
 	
-	public String add(movie movie);
+	public String add(Movie movie);
 
-	public List<movie> findAll();
+	public List<Movie> findAll();
 
 	public boolean delete(DBObject movie);
 
 	public DBObject findDocumentById(String id);
 	
-	public List<movie> searchmovie(String cityCode);
+	public List<Movie> searchMovie(String screenCode);
 	
 
 }

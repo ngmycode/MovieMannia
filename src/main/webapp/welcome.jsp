@@ -27,7 +27,7 @@
 <body>
 
     <div class="brand">Movie Mannia</div>
-    <div class="address-bar"> <br>Book Movie  Anytime ! Anywhere ! </br></div>
+    <div class="address-bar"> <br>Book Movie  Anytime ! Anywhere ! </div>
 
  <jsp:include page="navigation.jsp" />  
         

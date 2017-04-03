@@ -10,15 +10,17 @@ public class MovieUtils {
 
 	public static DBObject toDBObject(Movie movie) {
 
-		BasicDBObjectBuilder builder = BasicDBObjectBuilder.start().append("movie_id",movie.getMovieCode())
+		BasicDBObjectBuilder builder = BasicDBObjectBuilder.start().append("movie_id",movie.getMovieId())
 				.append("movie_name", movie.getMovieName())
-				.append("th_address", movie.getMovieAddress())
-				.append("th_mail", movie.getMovieEmail())
-				.append("th_phone", movie.getMoviePhone())
+				.append("language", movie.getLanguage())
+				.append("certificate", movie.getCertificate())
+				.append("releaseDate", movie.getReleaseDate())
+				.append("length", movie.getLength())
+				.append("actor", movie.getActor())
 				;
     
-		BasicDBObjectBuilder citybuilder = BasicDBObjectBuilder.start().append("city_id",movie.getCity());
-		builder.append("city", citybuilder.get());
+		BasicDBObjectBuilder screenbuilder = BasicDBObjectBuilder.start().append("screen_id",movie.getScreen());
+		builder.append("screen", screenbuilder.get());
 		return builder.get();
 	}
 
@@ -27,11 +29,13 @@ public class MovieUtils {
 	public static Movie toMovie(DBObject doc) {
 		Movie movie = new Movie();
 		
-		movie.setMovieCode((String) doc.get("movie_id"));
+		movie.setMovieId((String) doc.get("movie_id"));
 		movie.setMovieName((String) doc.get("movie_name"));
-		movie.setMovieAddress((String) doc.get("th_address"));
-		movie.setMovieEmail((String) doc.get("th_mail"));
-		movie.setMoviePhone((String) doc.get("th_phone"));
+		movie.setLanguage((String) doc.get("language"));
+		movie.setCertificate((String) doc.get("certificate"));
+		movie.setReleaseDate((String) doc.get("releaseDate"));
+		movie.setLength((String) doc.get("length"));
+		movie.setActor((String) doc.get("actor"));
 		ObjectId id = (ObjectId) doc.get("_id");
 		movie.setId(id.toString());
 		return movie;

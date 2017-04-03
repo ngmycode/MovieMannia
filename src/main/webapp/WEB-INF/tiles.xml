@@ -7,7 +7,7 @@
 <tiles-definitions>
 
   <definition name="baseLayout" template="/baseLayout.jsp">
-      <put-attribute name="title"  value="Template"/>
+      <put-attribute name="title"  value="MovieMannia"/>
       <put-attribute name="header" value="/header.jsp"/>
       <put-attribute name="menu"   value="/menu.jsp"/>
       <put-attribute name="body"   value="/body.jsp"/>
@@ -42,6 +42,10 @@
   <definition name="showOffer" extends="baseLayout">
     <put-attribute name="body"   value="/showOffer.jsp"/>      
   </definition>
+   <definition name="manageUser" extends="admin">
+    <put-attribute name="body"   value="/jsp/admin/manageUser.jsp"/>      
+  </definition>
+  
   
   <definition name="manageCity" extends="admin">
     <put-attribute name="body"   value="/jsp/admin/manageCity.jsp"/>      
@@ -53,6 +57,13 @@
  
   <definition name="manageScreen" extends="admin">
     <put-attribute name="body"   value="/jsp/admin/manageScreen.jsp"/>      
+  </definition>
+   <definition name="manageMovie" extends="admin">
+    <put-attribute name="body"   value="/jsp/admin/manageMovie.jsp"/>      
+  </definition>
+  
+ <definition name="manageShowDetails" extends="admin">
+    <put-attribute name="body"   value="/jsp/admin/manageShowDetails.jsp"/>      
   </definition>
   
 </tiles-definitions>

@@ -29,26 +29,30 @@
   
 	function resetMovie(){
 		var form=document.getElementById("movieForm");
-	    form.movieCode.value = '';
+	    form.movieId.value = '';
 	    form.movieName.value = '';
-	    form.movieAddress.value = '';
-	    form.movieEmail.value = '';
-	    form.moviePhone.value = '';
+	    form.language.value = '';
+	    form.certificate.value = '';
+	    form.releaseDate.value = '';
+	    form.length.value = '';
+	    form.actor.value = '';
 	}
 	
 	
 </script>
 
-<div id="content" style="background-color: #fff; height: 700px">
+<div id="content" style="background-color: #fff; height: auto">
 	<div id="addDiv" align="center" style="margin-top: 10%; display: none">
 		<s:form id="movieForm" action="addMovie">
 			<s:hidden key="id" id="id" value="" />
-			<s:textfield name="movieCode" label="Movie Code"></s:textfield>
-			<s:textfield name="movieName" label="Movie Name "></s:textfield>
-			<s:select label="Screen"  name="screen" list="screenList" listKey="screenId" listValue="screenName" />
-			<s:textfield name="movieAddress" label="Movie Address"></s:textfield>
-			<s:textfield name="movieEmail" label="Movie Email "></s:textfield>
-			<s:textfield name="moviePhone" label="Movie Phone"></s:textfield>
+			<s:textfield name="movieId" label="Movie Id" placeholder="Movie Id"></s:textfield>
+			<s:textfield name="movieName" label="Movie Name" placeholder="Movie Name"></s:textfield>
+			<s:select label="Screen"  name="screen" list="screenList" listKey="screenId" listValue="screenCode" />
+			<s:textfield name="language" label="Language" placeholder="Language"></s:textfield>
+			<s:textfield name="certificate" label="Certificate" placeholder="Certificate"></s:textfield>
+			<s:textfield name="releaseDate" label="Release Date " placeholder="Release Date" ></s:textfield>
+			<s:textfield name="length" label="Length" placeholder="Length"></s:textfield>
+			<s:textfield name="actor" label="Actor " placeholder="Actor"></s:textfield>
 			<s:submit value="Submit"></s:submit>
 		</s:form>
 	</div>
@@ -58,14 +62,14 @@
 		<s:form id="screenUpdateForm" action="updateScreen">
 			<s:hidden key="id" id="id" />
 			<s:textfield name="screenId" label="screenId"></s:textfield>
-			<s:textfield name="screenName" label="Screen Name "></s:textfield>
+			<s:textfield name="screenCode" label="Screen Code "></s:textfield>
 			<s:submit value="Submit" label="Update"></s:submit>
 		</s:form>
 	</div>
 
 <div>
 	<s:form id="searchForm" action="searchMovie">
-	<s:select label="Screen"  name="screen" list="screenList" listKey="screenId" listValue="screenName" />
+	<s:select label="Screen"  name="screen" list="screenList" listKey="screenId" listValue="screenCode" />
 	<s:submit value="Submit"></s:submit>
 	</s:form>
 	<div>
@@ -85,25 +89,29 @@
 	<div id="formDiv" align="center" style="margin-top: 1%">
 		<table border="1" width="500px">
 			<tr>
-				<td>Movie Code</td>
+				<td>Movie Id</td>
 				<td>Movie Name</td>
-				<td>Movie Address</td>
-				<td>Movie Phone</td>
-				<td>update</td>
-				<td>delete</td>
+				<td>Language</td>
+				<td>Certificate</td>
+				<td>Release Date</td>
+				<td>Length</td>
+					<td>Actor</td>
 			</tr>
 
 			<s:iterator value="movieList">
 				<tr>
-					<td><s:property value="movieCode" /></td>
+					<td><s:property value="movieId" /></td>
 					<td><s:property value="movieName" /></td>
-					<td><s:property value="movieAddress" /></td>
-					<td><s:property value="moviePhone" /></td>
+					<td><s:property value="language" /></td>
+					<td><s:property value="certificate" /></td>
+					<td><s:property value="releaseDate" /></td>
+					<td><s:property value="length" /></td>
+					<td><s:property value="actor" /></td>
 					<td><img src="images/edit.png"
-						onclick="editUser('<s:property value="id"/>','<s:property value="movieCode"/>','<s:property value="movieName"/>')"
+						onclick="editUser('<s:property value="id"/>','<s:property value="movieId"/>','<s:property value="movieName"/>')"
 						width="25px" height="25px"></td>
 					<td><img src="images/delete.png" width="25px"
-						onclick="deleteUser('<s:property value="id"/>')" height="25px"></td>
+						onclick="deleteMovie('<s:property value="id"/>')" height="25px"></td>
 				</tr>
 			</s:iterator>
 		</table>

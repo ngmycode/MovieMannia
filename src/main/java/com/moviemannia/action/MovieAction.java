@@ -2,13 +2,13 @@ package com.moviemannia.action;
 
 import java.util.List;
 
-import com.moviemannia.model.City;
+import com.moviemannia.model.Screen;
 import com.moviemannia.model.Movie;
 import com.moviemannia.model.User;
-import com.moviemannia.service.CityService;
+import com.moviemannia.service.ScreenService;
 import com.moviemannia.service.MovieService;
 import com.moviemannia.service.UserService;
-import com.moviemannia.service.impl.CityServiceImpl;
+import com.moviemannia.service.impl.ScreenServiceImpl;
 import com.moviemannia.service.impl.MovieServiceImpl;
 import com.moviemannia.service.impl.UserServiceImpl;
 import com.opensymphony.xwork2.ActionSupport;
@@ -21,13 +21,13 @@ public class MovieAction extends ActionSupport implements ModelDriven<Movie> {
 	
 	public String addMovie() throws Exception {
 		MovieService service = new MovieServiceImpl();
-		System.out.println(Movie.getCity());
+		System.out.println(Movie.getScreen());
 		service.add(Movie);
 		List<Movie> Movies = service.findAll();
 		Movie.setMovieList(Movies);
-		CityService cityService = new CityServiceImpl();
-		List<City> cityList = cityService.findAll();
-		Movie.setCityList(cityList);
+		ScreenService ScreenService = new ScreenServiceImpl();
+		List<Screen> ScreenList = ScreenService.findAll();
+		Movie.setScreenList(ScreenList);
 		return "SUCCESS";
 	}
 
@@ -35,9 +35,9 @@ public class MovieAction extends ActionSupport implements ModelDriven<Movie> {
 		MovieService service = new MovieServiceImpl();
 		List<Movie> Movies = service.findAll();
 		Movie.setMovieList(Movies);
-		CityService cityService = new CityServiceImpl();
-		List<City> cityList = cityService.findAll();
-		Movie.setCityList(cityList);
+		ScreenService ScreenService = new ScreenServiceImpl();
+		List<Screen> ScreenList = ScreenService.findAll();
+		Movie.setScreenList(ScreenList);
 		return "SUCCESS";
 		}
 
@@ -52,11 +52,11 @@ public class MovieAction extends ActionSupport implements ModelDriven<Movie> {
 	
 	public String searchMovie() throws Exception {
 		MovieService service = new MovieServiceImpl();
-		List<Movie> Movies = service.searchMovie(Movie.getCity());
+		List<Movie> Movies = service.searchMovie(Movie.getScreen());
 		Movie.setMovieList(Movies);
-		CityService cityService = new CityServiceImpl();
-		List<City> cityList = cityService.findAll();
-		Movie.setCityList(cityList);
+		ScreenService ScreenService = new ScreenServiceImpl();
+		List<Screen> ScreenList = ScreenService.findAll();
+		Movie.setScreenList(ScreenList);
 		return "SUCCESS";
 		}
 

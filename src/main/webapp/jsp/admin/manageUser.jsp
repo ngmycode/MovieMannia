@@ -46,7 +46,7 @@
 			return false;
 		}
 	}
-	function editUser(id,userId,emial,mobile) {
+	function editUser(id,userId,email,mobile) {
 		 document.getElementById("updateDiv").style.display='block';
 		    var form=document.getElementById("userUpdateForm");
 		    form.id.value = id;

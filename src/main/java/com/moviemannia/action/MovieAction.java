@@ -65,6 +65,7 @@ public class MovieAction extends ActionSupport implements ModelDriven<Movie> {
 	public Movie getModel() {
 		Movie = new Movie();
 		return Movie;
+		return 0;
 	}
 
 }

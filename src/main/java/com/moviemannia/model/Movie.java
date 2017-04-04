@@ -34,7 +34,7 @@ public class Movie {
 	public void setMovieName(String movieName) {
 		this.movieName = movieName;
 	}
-	public String getLanguage() {
+	public String getLanguage() {//
 		return language;
 	}
 	public void setLanguage(String language) {

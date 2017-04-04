@@ -29,7 +29,7 @@ public class Screen {
 	}
 	public void setScreenCode(String screenCode) {
 		this.screenCode = screenCode;
-	}
+	}//
 	
 	public String getTotalSeat() {
 		return totalSeat;

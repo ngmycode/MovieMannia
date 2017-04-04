@@ -15,7 +15,7 @@ public interface MovieDao {
 
 	public DBObject findDocumentById(String id);
 	
-	public List<Movie> searchMovie(String screenCode);
+	public List<Movie> searchMovie(String screenCode);//
 	
 
 }

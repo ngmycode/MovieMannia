@@ -15,7 +15,7 @@ public interface ShowDetailsDao {
 
 	public DBObject findDocumentById(String id);
 	
-	public List<ShowDetails> searchShowDetails(String movieId);
+	public List<ShowDetails> searchShowDetails(String movieId);//
 	
 
 }

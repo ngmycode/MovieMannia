@@ -15,7 +15,7 @@ public interface ScreenDao {
 
 	public DBObject findDocumentById(String id);
 	
-	public List<Screen> searchScreen(String theaterCode);
+	public List<Screen> searchScreen(String theaterCode);//
 	
 
 }

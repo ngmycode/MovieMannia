@@ -64,6 +64,6 @@
   
  <definition name="manageShowDetails" extends="admin">
     <put-attribute name="body"   value="/jsp/admin/manageShowDetails.jsp"/>      
-  </definition>
+  </definition><!---->
   
 </tiles-definitions>

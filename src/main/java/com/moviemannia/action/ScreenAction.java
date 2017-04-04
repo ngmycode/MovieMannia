@@ -18,7 +18,7 @@ import com.opensymphony.xwork2.ModelDriven;
 public class ScreenAction extends ActionSupport implements ModelDriven<Screen> {
 
 	private static final long serialVersionUID = -2025967890517108542L;
-	private Screen screen;
+	private Screen screen;//
 	
 	public String addScreen() throws Exception {
 		ScreenService service = new ScreenServiceImpl();

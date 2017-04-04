@@ -63,6 +63,6 @@ public class ShowDetailsAction extends ActionSupport implements ModelDriven<Show
 	@Override
 	public ShowDetails getModel() {
 		showDetails = new ShowDetails();
-		return showDetails;
+		return showDetails;//MQC 11285
 	}
 }

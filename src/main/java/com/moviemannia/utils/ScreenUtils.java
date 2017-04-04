@@ -17,7 +17,7 @@ public class ScreenUtils {
 				;
     
 		BasicDBObjectBuilder theaterbuilder = BasicDBObjectBuilder.start().append("theater_id",screen.getTheater());
-		builder.append("theater", theaterbuilder.get());
+		builder.append("theater", theaterbuilder.get());//
 		return builder.get();
 	}
 
@@ -30,7 +30,7 @@ public class ScreenUtils {
 		screen.setScreenCode((String) doc.get("screen_code"));
 		screen.setTotalSeat((String) doc.get("total_seat"));
 		
-		ObjectId id = (ObjectId) doc.get("_id");
+		ObjectId id = (ObjectId) doc.get("_id");//
 		screen.setId(id.toString());
 		return screen;
 	}

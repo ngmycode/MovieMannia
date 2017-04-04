@@ -19,7 +19,7 @@ public class ShowDetailsUtils {
     
 		BasicDBObjectBuilder moviebuilder = BasicDBObjectBuilder.start().append("movie_id",showDetails.getMovie());
 		builder.append("movie", moviebuilder.get());
-		return builder.get();
+		return builder.get();//
 	}
 
 	// convert DBObject Object to Person

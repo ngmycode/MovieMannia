@@ -21,7 +21,7 @@ public class MovieUtils {
     
 		BasicDBObjectBuilder screenbuilder = BasicDBObjectBuilder.start().append("screen_id",movie.getScreen());
 		builder.append("screen", screenbuilder.get());
-		return builder.get();
+		return builder.get();//
 	}
 
 	// convert DBObject Object to Person

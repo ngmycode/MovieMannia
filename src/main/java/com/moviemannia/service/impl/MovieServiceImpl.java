@@ -32,7 +32,7 @@ public class MovieServiceImpl implements MovieService {
 	@Override
 	public List<Movie> searchMovie(String screenCode) {
 		MovieDao dao = new MovieDaoImpl();
-		return dao.searchMovie(screenCode);
+		return dao.searchMovie(screenCode);//new screencode
 	}
 
 }

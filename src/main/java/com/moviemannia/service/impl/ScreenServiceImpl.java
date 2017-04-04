@@ -32,7 +32,7 @@ public class ScreenServiceImpl implements ScreenService {
 	@Override
 	public List<Screen> searchScreen(String theaterCode) {
 		ScreenDao dao = new ScreenDaoImpl();
-		return dao.searchScreen(theaterCode);
+		return dao.searchScreen(theaterCode);//new screencode
 	}
 
 }

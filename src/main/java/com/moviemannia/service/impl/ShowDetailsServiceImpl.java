@@ -32,7 +32,7 @@ public class ShowDetailsServiceImpl implements ShowDetailsService {
 	@Override
 	public List<ShowDetails> searchShowDetails(String movieId) {
 		ShowDetailsDao dao = new ShowDetailsDaoImpl();
-		return dao.searchShowDetails(movieId);
+		return dao.searchShowDetails(movieId);//new screencode
 	}
 
 }

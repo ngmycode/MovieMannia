@@ -114,7 +114,7 @@
 		
 		<action name="searchShowDetails" method="searchShowDetails" class="com.moviemannia.action.ShowDetailsAction">
 		<result name="SUCCESS" type="tiles">manageShowDetails</result>
-		</action>
+		</action><!---->
 		
 		
 	</package>

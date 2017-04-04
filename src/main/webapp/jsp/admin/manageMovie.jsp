@@ -99,7 +99,7 @@
 			</tr>
 
 			<s:iterator value="movieList">
-				<tr>
+				<tr><!---->
 					<td><s:property value="movieId" /></td>
 					<td><s:property value="movieName" /></td>
 					<td><s:property value="language" /></td>

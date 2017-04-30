@@ -18,11 +18,10 @@
 			<result name="user" type="tiles">user</result>
 		</action>
 		
+		<!--User Crud  -->
 		<action name="manageUser" method="manageUser" class="com.moviemannia.action.UserAction">
 		<result name="SUCCESS" type="tiles">manageUser</result>
 		</action>
-		
-		
 		
 		<action name="addUser" method="add" class="com.moviemannia.action.UserAction">
 		<result name="SUCCESS" type="tiles">manageUser</result>
@@ -31,10 +30,12 @@
         <action name="deleteUser" method="deleteUser" class="com.moviemannia.action.UserAction">
 		<result name="SUCCESS" type="tiles">manageUser</result>
 		</action>
+		
+		<!--Offer Crud  -->
 		<action name="showOffer" method="showOffer" class="com.moviemannia.action.ShowOfferAction">
 		<result name="SUCCESS" type="tiles">showOffer</result>
 		</action>
-		<!-- city curd start -->
+		 <!-- city crud start -->
 		<action name="manageCity" method="manageCity" class="com.moviemannia.action.CityAction">
 		<result name="SUCCESS" type="tiles">manageCity</result>
 		</action>
@@ -47,7 +48,7 @@
 		<result name="SUCCESS" type="tiles">manageCity</result>
 		</action>
 	
-	   <!-- Theater curd start -->
+	   <!-- Theater crud start -->
 		<action name="manageTheater" method="manageTheater" class="com.moviemannia.action.TheaterAction">
 		<result name="SUCCESS" type="tiles">manageTheater</result>
 		</action>
@@ -63,6 +64,58 @@
 		<action name="searchTheater" method="searchTheater" class="com.moviemannia.action.TheaterAction">
 		<result name="SUCCESS" type="tiles">manageTheater</result>
 		</action>
+		
+		<!-- Screen crud start -->
+		<action name="manageScreen" method="manageScreen" class="com.moviemannia.action.ScreenAction">
+		<result name="SUCCESS" type="tiles">manageScreen</result>
+		</action>
+		
+		<action name="addScreen" method="addScreen" class="com.moviemannia.action.ScreenAction">
+		<result name="SUCCESS" type="tiles">manageScreen</result>
+		</action>
+     
+        <action name="deleteScreen" method="deleteScreen" class="com.moviemannia.action.ScreenAction">
+		<result name="SUCCESS" type="tiles">manageScreen</result>
+		</action>
+		
+		<action name="searchScreen" method="searchScreen" class="com.moviemannia.action.ScreenAction">
+		<result name="SUCCESS" type="tiles">manageScreen</result>
+		</action>
+		
+		<!-- Movie crud start -->
+		<action name="manageMovie" method="manageMovie" class="com.moviemannia.action.MovieAction">
+		<result name="SUCCESS" type="tiles">manageMovie</result>
+		</action>
+		
+		<action name="addMovie" method="addMovie" class="com.moviemannia.action.MovieAction">
+		<result name="SUCCESS" type="tiles">manageMovie</result>
+		</action>
+     
+        <action name="deleteMovie" method="deleteMovie" class="com.moviemannia.action.MovieAction">
+		<result name="SUCCESS" type="tiles">manageMovie</result>
+		</action>
+		
+		<action name="searchMovie" method="searchMovie" class="com.moviemannia.action.MovieAction">
+		<result name="SUCCESS" type="tiles">manageMovie</result>
+		</action>
+		
+		<!-- showDetails crud start -->
+		<action name="manageShowDetails" method="manageShowDetails" class="com.moviemannia.action.ShowDetailsAction">
+		<result name="SUCCESS" type="tiles">manageShowDetails</result>
+		</action>
+		
+		<action name="addShowDetails" method="addShowDetails" class="com.moviemannia.action.ShowDetailsAction">
+		<result name="SUCCESS" type="tiles">manageShowDetails</result>
+		</action>
+     
+        <action name="deleteShowDetails" method="deleteShowDetails" class="com.moviemannia.action.ShowDetailsAction">
+		<result name="SUCCESS" type="tiles">manageShowDetails</result>
+		</action>
+		
+		<action name="searchShowDetails" method="searchShowDetails" class="com.moviemannia.action.ShowDetailsAction">
+		<result name="SUCCESS" type="tiles">manageShowDetails</result>
+		</action><!---->
+		
 		
 	</package>
 </struts>

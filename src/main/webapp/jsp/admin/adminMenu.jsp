@@ -1,8 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
 
  <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="s" uri="/struts-tags" %>
-<head>
+<head><!---->
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +20,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+  
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
 
@@ -28,8 +30,8 @@
 
     
 </head>
-<body>  <div class="brand">Movie Mannia</div>
-    <div class="address-bar"> <br>Book Movie  Anytime ! Anywhere ! </br></div>
+  <div class="brand">Movie Mannia</div>
+    <div class="address-bar"> <br>Book Movie  Anytime ! Anywhere ! </div>
 
 <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -58,9 +60,11 @@
   
   <ul class="dropdown-menu">
     <li><a href="<s:url action="manageUser"/>">User</a></li>
-    <li><a href="#">Movies</a></li>
     <li><a href="<s:url action="manageCity"/>">Cities</a></li>
      <li><a href="<s:url action="manageTheater"/>">Theater</a></li>
+      <li><a href="<s:url action="manageScreen"/>">Screen</a></li>
+       <li><a href="<s:url action="manageMovie"/>">Movies</a></li>
+           <li><a href="<s:url action="manageShowDetails"/>">Show Details</a></li>
     <li><a href="#">Offer</a></li>
   </ul>
 </div>
@@ -82,6 +86,6 @@
            </div>
             <!-- /.navbar-collapse -->
        </nav>
-         <div class="container"></div>
-         </body>
+         
+       
         

@@ -4,7 +4,7 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 
 <head>
- <jsp:include page="adminMenu.jsp" /> 
+ 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +46,7 @@
 			return false;
 		}
 	}
-	function editUser(id,userId,emial,mobile) {
+	function editUser(id,userId,email,mobile) {
 		 document.getElementById("updateDiv").style.display='block';
 		    var form=document.getElementById("userUpdateForm");
 		    form.id.value = id;

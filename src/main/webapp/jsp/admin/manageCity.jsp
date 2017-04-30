@@ -79,7 +79,7 @@
 				 onclick="editUser('<s:property value="id"/>','<s:property value="cityId"/>','<s:property value="cityName"/>')" 
 				 width="25px" height="25px"></td>
 				<td><img src="images/delete.png" width="25px"
-					onclick="deleteUser('<s:property value="id"/>')" height="25px"></td>
+					onclick="deleteCitry('<s:property value="id"/>')" height="25px"></td>
 			</tr>
 		</s:iterator>
 	</table>
